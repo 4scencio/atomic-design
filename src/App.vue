@@ -1,14 +1,21 @@
 <template>
-  <h1>Atomic Design</h1>
+  <div class="component">
+    <Logo />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { Logo } from '@/components/atoms'
 
 export default defineComponent({
   name: 'App',
-  components: {}
+  components: { Logo }
 })
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.component {
+  width: 300px;
+}
+</style>
