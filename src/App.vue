@@ -1,16 +1,31 @@
 <template>
   <div class="component">
-    <SearchForm />
+    <SocialLink
+      name="Facebook"
+      to="http://www.facebook.com"
+      icon="facebook.svg"
+    />
+    <SocialLink
+      name="Github"
+      to="http://www.Github.com"
+      icon="github.svg"
+    />
+        <SocialLink
+      name="Twitter"
+      to="http://www.Twitter.com"
+      icon="twitter.svg"
+    />
+    
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { SearchForm } from '@/components/molecules'
+import { SocialLink } from '@/components/atoms'
 
 export default defineComponent({
   name: 'App',
-  components: { SearchForm }
+  components: { SocialLink }
 })
 </script>
 
