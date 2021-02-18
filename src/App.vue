@@ -1,22 +1,21 @@
 <template>
   <div class="component">
-    <Services title="Front-End" description="lorem ipsum" />
+    <Header />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Services } from '@/components/molecules'
+import { Header } from '@/components/organisms'
 
 export default defineComponent({
   name: 'App',
-  components: { Services }
+  components: { Header }
 })
 </script>
 
 <style lang="scss">
 .component {
-  width: 300px;
   margin: 5rem;
 }
 </style>
